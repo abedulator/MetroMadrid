@@ -13,6 +13,9 @@ class MyTestCase(unittest.TestCase):
 
     def test_1(self):
         self.assertEqual(grafo.IsConected(grafo_prueba[0],grafo_prueba[1]),True)
+
+    def test_2 (self):
+        self.assertEqual(grafo.camlong(grafo_prueba[0],grafo_prueba[4]),3)
     #def test_fin(self):
     #    self.assertEqual(grafo.metrolong(grafo_prueba),5)
 

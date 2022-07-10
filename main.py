@@ -25,11 +25,20 @@ class grafo:
 
         return longi
     """
-    def minimetrolong(nodos,visited,long):
+    def minimetro(nodo,visited,long):
         pass
         # return [visited,long]
 
-    def metrolong(nodos,start = []):
-        pass
-        #
+    def metro(self,nodos,start = []):
+        maxim = [[],1]
+        if start == []:
+            list = nodos
+        else:
+            list = start
+        for ele in list:
+            val = self.minimetro(nodo,[ele],1)
+            if val[1] > maxim[1]:
+                maxim = val
+
+        return maxim
 

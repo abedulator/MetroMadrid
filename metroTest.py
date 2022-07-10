@@ -7,7 +7,6 @@ nodo4 = nodo("n4",["n2","n5"])
 nodo5 = nodo("n5",["n3","n4"])
 grafo_prueba = [nodo1,nodo2,nodo3,nodo4,nodo5]
 
-
 class MyTestCase(unittest.TestCase):
     def test_something(self):
         self.assertEqual(1+1, 2)

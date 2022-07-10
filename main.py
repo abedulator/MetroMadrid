@@ -6,7 +6,8 @@ class nodo:
 
 class grafo:
     def IsConected(nodo1,nodo2):
-        pass
+        return nodo2.nombre in nodo1.conexiones 
+
 
     def metrolong(nodos):
         pass

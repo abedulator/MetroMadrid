@@ -28,8 +28,8 @@ class MyTestCase(unittest.TestCase):
 
     #  def test_Bonus_Content (self):
     #     self.assertEqual(grafo.camlong(grafo_prueba[0],grafo_prueba[4]),3)
-    #def test_fin(self):
-    #    self.assertEqual(grafo.metrolong(grafo_prueba),5)
+    def test_fin(self):
+        self.assertEqual(grafo.metrolong(grafo_prueba),5)
 
 
 if __name__ == '__main__':

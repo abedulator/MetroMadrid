@@ -5,13 +5,12 @@ class nodo:
         self.factible = factible
 
 class grafo:
-    def __init__(self,nodos,inicio = False):
-        self.nodos = nodos
-        self.inicio = inicio
-
-    def metrolong(self):
+    def IsConected(nodo1,nodo2):
         pass
 
-    def metrocamino(self):
+    def metrolong(nodos):
+        pass
+
+    def metrocamino(nodos):
         pass
 

@@ -25,18 +25,30 @@ class grafo:
 
         return longi
     """
-    def minimetro(nodo,visited,long):
-        pass
-        # return [visited,long]
+    def name2node(name,nodos):
+        for x in nodos:
+            if x.nombre == name:
+                return x
 
-    def metro(self,nodos,start = []):
+    def minimetro(nodos,visited,long,actual_node):
+        for nod in actual_node.conexiones:
+            if nod in visited:
+                continue
+            else:
+                visited.append(nod)
+                ++long
+                grafo.minimetro(nodos, visited, long, grafo.name2node(nod,nodos))
+        return [visited,long]
+
+
+    def metro(nodos,start = []):
         maxim = [[],1]
         if start == []:
             list = nodos
         else:
             list = start
         for ele in list:
-            val = self.minimetro(nodo,[ele],1)
+            val = grafo.minimetro(nodos,[ele.nombre],1,ele)
             if val[1] > maxim[1]:
                 maxim = val
 

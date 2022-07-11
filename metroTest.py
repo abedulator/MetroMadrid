@@ -23,13 +23,15 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(grafo.IsConected(grafo_prueba[0],grafo_prueba[1]),True)
 
 
-    def test_2(self):
-        self.assertEqual(grafo.IsConected(grafo_prueba[2],grafo_prueba[0]),False)
+    #def test_2(self):
+     #   self.assertEqual(grafo.IsConected(grafo_prueba[2],grafo_prueba[0]),False)
 
     #  def test_Bonus_Content (self):
     #     self.assertEqual(grafo.camlong(grafo_prueba[0],grafo_prueba[4]),3)
+    def test_2(self):
+        self.assertEqual(grafo.name2node("n2",grafo_prueba),nodo2)
     def test_fin(self):
-        self.assertEqual(grafo.metro(grafo_prueba)[0],5)
+        self.assertEqual(grafo.metro(grafo_prueba),5)
 
 
 if __name__ == '__main__':

@@ -36,18 +36,14 @@ class grafo:
                 continue
             else:
                 visited.append(nod)
-                ++long
+                long = long + 1
                 grafo.minimetro(nodos, visited, long, grafo.name2node(nod,nodos))
         return [visited,long]
 
 
-    def metro(nodos,start = []):
+    def metro(nodos):
         maxim = [[],1]
-        if start == []:
-            list = nodos
-        else:
-            list = start
-        for ele in list:
+        for ele in nodos:
             val = grafo.minimetro(nodos,[ele.nombre],1,ele)
             if val[1] > maxim[1]:
                 maxim = val
